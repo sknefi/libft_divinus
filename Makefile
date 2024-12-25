@@ -56,6 +56,7 @@ SRCS = \
 		\
 		ft_dll/dll_append.c \
 		ft_dll/dll_clear.c \
+		ft_dll/dll_delete.c \
 		ft_dll/dll_create.c \
 		ft_dll/dll_init.c \
 		ft_dll/dll_iteri.c \
