@@ -6,7 +6,7 @@
 /*   By: filip <filip@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 16:03:25 by fkarika           #+#    #+#             */
-/*   Updated: 2024/12/25 15:24:55 by filip            ###   ########.fr       */
+/*   Updated: 2024/12/25 22:11:48 by filip            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,13 +54,13 @@ t_dll	*dll_create(char **argv, char name)
 	{
 		err_flag = 0;
 		if (!ft_isnumber(argv[i]))
-			return (dll_clear(dll), free(dll), NULL);
+			return (dll_delete(dll), NULL);
 		num = ft_atoii(argv[i], &err_flag);
 		if (err_flag == -1)
-			return (dll_clear(dll), free(dll), NULL);
+			return (dll_delete(dll), NULL);
 		new_node = init_node(num);
 		if (!new_node)
-			return (dll_clear(dll), free(dll), NULL);
+			return (dll_delete(dll), NULL);
 		dll_append(dll, new_node);
 		i++;
 	}

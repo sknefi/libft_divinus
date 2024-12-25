@@ -6,7 +6,7 @@
 /*   By: filip <filip@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 19:28:31 by fkarika           #+#    #+#             */
-/*   Updated: 2024/12/25 16:10:08 by filip            ###   ########.fr       */
+/*   Updated: 2024/12/25 22:11:21 by filip            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,5 +102,6 @@ t_dll	*dll_init(char name);
 void	dll_iteri(t_dll *dll, void (*f)(t_node *node));
 void	*dll_prepend(t_dll *dll, t_node *new_node);
 void	dll_printer(t_dll *dll);
+void	dll_delete(t_dll *dll);
 
 #endif
