@@ -6,7 +6,7 @@
 /*   By: filip <filip@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 19:28:31 by fkarika           #+#    #+#             */
-/*   Updated: 2024/12/25 22:11:21 by filip            ###   ########.fr       */
+/*   Updated: 2024/12/25 22:20:08 by filip            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdio.h>
-
+# include <fcntl.h>
 typedef struct s_list
 {
 	void			*content;

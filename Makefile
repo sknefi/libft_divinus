@@ -71,8 +71,6 @@ SRCS = \
 		\
 		get_next_line/get_next_line_bonus.c \
 		get_next_line/get_next_line_utils_bonus.c \
-		\
-		main.c
 		
 OBJS 		= $(SRCS:.c=.o)
 
@@ -84,10 +82,6 @@ all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
-	$(CC) $(OBJS) -o test
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	$(RM) $(OBJS)
@@ -97,4 +91,4 @@ fclean: clean
 
 re: fclean all
 
-.phony: all clean fclean re
+.PHONY: all clean fclean re
