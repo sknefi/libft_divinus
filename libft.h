@@ -6,7 +6,7 @@
 /*   By: filip <filip@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 19:28:31 by fkarika           #+#    #+#             */
-/*   Updated: 2024/12/25 22:20:08 by filip            ###   ########.fr       */
+/*   Updated: 2025/02/08 11:57:14 by filip            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,7 @@ void	ft_putnbr_fd(int n, int fd);
 char	**ft_split(char const *s, char c);
 void	free_split_all(char **arr, int w);
 void	free_split(char **arr);
+int		ft_split_len(char **arr);
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *new);
 void	ft_lstadd_back(t_list **lst, t_list *new);

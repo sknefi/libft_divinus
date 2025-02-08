@@ -6,7 +6,7 @@
 /*   By: filip <filip@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 18:52:35 by fkarika           #+#    #+#             */
-/*   Updated: 2024/12/25 15:11:02 by filip            ###   ########.fr       */
+/*   Updated: 2025/02/08 11:56:49 by filip            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,16 @@ void	free_split(char **arr)
 	while (arr[i])
 		free(arr[i++]);
 	free(arr);
+}
+
+int	ft_split_len(char **arr)
+{
+	int	i;
+
+	i = 0;
+	while (arr[i])
+		i++;
+	return (i);
 }
 
 char	**ft_split(char const *s, char c)
