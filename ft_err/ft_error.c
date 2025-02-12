@@ -6,13 +6,13 @@
 /*   By: filip <filip@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/16 16:03:36 by fkarika           #+#    #+#             */
-/*   Updated: 2024/12/25 15:11:02 by filip            ###   ########.fr       */
+/*   Updated: 2025/02/12 10:12:47 by filip            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-void	ft_error(char *str)
+void	ft_error(const char *str)
 {
 	write(2, "Error: ", 7);
 	write(2, str, ft_strlen(str));

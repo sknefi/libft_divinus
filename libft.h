@@ -6,7 +6,7 @@
 /*   By: filip <filip@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/24 19:28:31 by fkarika           #+#    #+#             */
-/*   Updated: 2025/02/08 11:57:14 by filip            ###   ########.fr       */
+/*   Updated: 2025/02/12 10:13:26 by filip            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 char	*get_next_line(int fd);
 int		ft_printf(const char *str, ...);
-void	ft_error(char *str);
+void	ft_error(const char *str);
 void	ft_error_basic(void);
 int		ft_isnumber(char *str);
 void	*dll_append(t_dll *dll, t_node *new_node);
