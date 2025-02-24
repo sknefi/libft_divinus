@@ -6,7 +6,7 @@ YELLOW		= \033[33m
 BLUE  		= \033[34m
 RESET 		= \033[0m
 
-SRCS =  main.c \
+SRCS =  \
 		ft_conv/ft_atoi.c \
 		ft_conv/ft_itoa.c \
 		ft_conv/ft_tolower.c \
@@ -87,9 +87,6 @@ RM			= rm -f
 all: $(NAME)
 
 $(NAME): $(OBJS)
-# @echo "$(YELLOW)Compiling $(NAME)$(RESET)"
-# $(CC) $(CFLAGS) -o a.out $(OBJS)
-# @echo "$(GREEN)$(NAME) compiled$(RESET)"
 	@echo "$(YELLOW)Creating Library: $(NAME)$(RESET)"
 	ar rcs $(NAME) $(OBJS)
 	@echo "$(GREEN)SUCCESS: $(NAME) created$(RESET)"
